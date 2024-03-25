@@ -10,6 +10,13 @@ contract Attack {
     address internal immutable victim;
     // TODO: Declare some variable here
     // Note: Checkout the storage layout in victim contract
+    uint256 var0 = 12345;
+    uint8 var1 = 32;
+    string private var2;
+    address private var3;
+    uint8 private var4;
+    address public owner;
+    mapping(address => bool) public result;
 
     constructor(address addr) payable {
         victim = addr;
